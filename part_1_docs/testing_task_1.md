@@ -22,7 +22,7 @@ class CardGame:
       return True
     else
       return False
-# second return after else should be None, not false and in the same level of indentation as "if"(no "else" needed )
+# second return after else should in the same level of indentation as "if"(no "else" needed )
    
 
   dif highest_card(self, card1 card2): #missing semicolon between card1 and card2. # Also "def" not "dif"; 
