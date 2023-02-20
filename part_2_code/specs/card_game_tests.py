@@ -19,12 +19,14 @@ class TestCardGame(unittest.TestCase):
         self.assertEqual(False, self.cardGame.check_for_ace(self.card2))
 
     def test_can_get_highest_card(self):
-        self.assertEqual(self.card1, self.cardGame.highest_card( self.card1, self.card2))
+        self.assertEqual(self.card1, self.cardGame.highest_card(
+            self.card1, self.card2))
 
     def test_can_get_cards_total(self):
-        cards=[self.card1, self.card2, self.card]
-       
-        self.assertEqual("You have a total of11", self.cardGame.cards_total(cards))
+        cards = [self.card1, self.card2, self.card]
+
+        self.assertEqual("You have a total of11",
+                         self.cardGame.cards_total(cards))
 
 
 if __name__ == '__main__':
